@@ -16,6 +16,7 @@ const Page = async ({
       <Header />
       <BlogPostsPreview posts={result.posts} />
       <BlogPostsPagination pagination={result.pagination} />
+      <Footer />
     </div>
   );
 };
