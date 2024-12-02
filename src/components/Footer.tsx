@@ -30,11 +30,7 @@ export const Footer: FunctionComponent = () => {
         </div>
       </div>
       <div className="text-xs text-muted-foreground lg:hidden">
-        <Link
-          href={`https://wisp.blog/?utm_source=next-js-template&utm_medium=web&utm_campaign=${config.baseUrl}`}
-        >
-          Blog powered by wisp
-        </Link>
+        
       </div>
     </section>
   );
