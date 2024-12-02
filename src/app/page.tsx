@@ -1,5 +1,6 @@
 import { BlogPostsPreview } from "@/components/BlogPostPreview";
 import { BlogPostsPagination } from "@/components/BlogPostsPagination";
+import { Analytics } from '@vercel/analytics/react'
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { wisp } from "@/lib/wisp";
@@ -13,6 +14,7 @@ const Page = async ({
   const result = await wisp.getPosts({ limit: 6, page });
   return (
     <div className="container mx-auto px-5 mb-10">
+       <Analytics />
       <Header />
       <BlogPostsPreview posts={result.posts} />
       <BlogPostsPagination pagination={result.pagination} />
